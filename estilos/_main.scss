@@ -1,0 +1,81 @@
+$lightblue:#add8e6;
+$blue:#3498DB;
+$white:#fff;
+
+
+#legend{
+    text-align: left;
+}
+main{
+    display: block;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    background-color: $white;
+    margin-bottom: 10px;
+}
+.contenedor-form{
+    border: solid 2px black;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: $lightblue;
+}
+.style .estados{
+    width: 100px;
+    display: inline-block;
+}
+.style p{
+    display: inline-block;
+    width: 180px;
+    margin: 20px 20px;
+}
+.style input{
+    width: auto;
+}
+.style select{
+    width: auto;
+}
+
+#colores{
+    width: 40px;
+    padding: 0px;
+    border: none;
+}
+fieldset{
+    border: solid 2px black;
+    padding: 0px;
+    margin: 30px 50px;
+}
+#validar:hover{
+    background-color: $blue;
+    transition: all 0.2s ease;
+    padding: 5px 10px;
+}
+#validar:active {
+    background-color: $blue;
+    transition: all ease;
+}
+
+.gl {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+.gl button {
+    margin: 10px 25px;
+    padding: 5px;
+}
+.gl button:hover {
+    color: #fff;
+    background-color: #3498DB;
+    padding: 5px 10px;
+    transition: all 0.2s ease;
+}
+.gl button:active {
+    background-color: #85C1E9;
+    transition: all ease;
+}
+#textarea{
+    width: auto;
+}
