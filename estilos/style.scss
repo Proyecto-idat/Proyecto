@@ -14,17 +14,19 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-footer a {
-    color: #000;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-}
-footer a:hover {
-    font-size: large;
-    box-shadow: 0 0 5px 0 #fff inset, 0 0 10px 4px #fff;
-    color: #fff;
-    transition: all 0.1s ease-in-out;
+footer {
+	a {
+		color: #000;
+		text-decoration: none;
+		padding: 10px;
+		border-radius: 10px;
+		&:hover {
+			font-size: large;
+			box-shadow: 0 0 5px 0 #fff inset, 0 0 10px 4px #fff;
+			color: #fff;
+			transition: all 0.1s ease-in-out;
+		}
+	}
 }
 .contenedor{
     display: none;

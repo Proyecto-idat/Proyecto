@@ -1,81 +1,83 @@
 $lightblue:#add8e6;
 $blue:#3498DB;
 $white:#fff;
+$black:#000;
 
-
-#legend{
-    text-align: left;
+#legend {
+	text-align: left;
 }
-main{
-    display: block;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0px;
-    background-color: $white;
-    margin-bottom: 10px;
+main {
+	display: block;
+	width: 100%;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0px;
+	background-color: $white;
+	margin-bottom: 10px;
 }
-.contenedor-form{
-    border: solid 2px black;
-    margin-top: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: $lightblue;
+.contenedor-form {
+	border: solid 2px $black;
+	margin-top: 10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	background-color: $lightblue;
 }
-.style .estados{
-    width: 100px;
-    display: inline-block;
+.style {
+	.estados {
+		width: 100px;
+		display: inline-block;
+	}
+	p {
+		display: inline-block;
+		width: 180px;
+		margin: 20px 20px;
+	}
+	input {
+		width: auto;
+	}
+	select {
+		width: auto;
+	}
 }
-.style p{
-    display: inline-block;
-    width: 180px;
-    margin: 20px 20px;
+#colores {
+	width: 40px;
+	padding: 0px;
+	border: none;
 }
-.style input{
-    width: auto;
+fieldset {
+	border: solid 2px $black;
+	padding: 0px;
+	margin: 30px 50px;
 }
-.style select{
-    width: auto;
+#validar {
+	&:hover {
+		background-color: $blue;
+		transition: all 0.2s ease;
+		padding: 5px 10px;
+	}
+	&:active {
+		background-color: $blue;
+		transition: all ease;
+	}
 }
-
-#colores{
-    width: 40px;
-    padding: 0px;
-    border: none;
-}
-fieldset{
-    border: solid 2px black;
-    padding: 0px;
-    margin: 30px 50px;
-}
-#validar:hover{
-    background-color: $blue;
-    transition: all 0.2s ease;
-    padding: 5px 10px;
-}
-#validar:active {
-    background-color: $blue;
-    transition: all ease;
-}
-
 .gl {
-    margin: 40px 0px;
-    display: flex;
-    justify-content: center;
+	margin: 40px 0px;
+	display: flex;
+	justify-content: center;
+	button {
+		margin: 10px 25px;
+		padding: 5px;
+		&:hover {
+			color: $white;
+			background-color: $blue;
+			padding: 5px 10px;
+			transition: all 0.2s ease;
+		}
+		&:active {
+			background-color: $lightblue;
+			transition: all ease;
+		}
+	}
 }
-.gl button {
-    margin: 10px 25px;
-    padding: 5px;
-}
-.gl button:hover {
-    color: #fff;
-    background-color: #3498DB;
-    padding: 5px 10px;
-    transition: all 0.2s ease;
-}
-.gl button:active {
-    background-color: #85C1E9;
-    transition: all ease;
-}
-#textarea{
-    width: auto;
+#textarea {
+	width: auto;
 }
