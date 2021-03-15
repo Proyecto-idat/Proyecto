@@ -1,39 +1,217 @@
 @import "header";
 @import "nav";
 @import "main";
+@import "footer";
 
 
-/* FORMULARIO */
+
+body {
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav   "
+    "main  "
+    "footer";
+}
+
+@media screen and (max-width: 320px){
+
+    body{
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    
+    }
+    header {
+        width: 100%;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-size: 120% 100%;
+        background-position-x: -30px;
+        animation-name: header;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    .titulo h1{
+        font-size: 12px;
+    }
+    .titulo p {
+        margin: 10px;
+    }
+    .titulo img{
+        display: none;
+    }
+    .titulo p{
+        display: none;
+    }
+
+    .contenedor{
+        display: block;
+        position: relative;
+        background-color: lightblue;
+        border-bottom: solid black;
+
+    }
+    #hamburguesa{
+        font-size: 22px;
+        padding: 10px 5px;
+    }
+    .contenedor ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .contenedor ul li{
+        padding: 5px 0px;
+    }
+    .contenedor ul li a{
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .contenedor ul li a i{
+        display: inline-block;
+        color: rgb(50, 50, 133);
+        min-width: 50px;
+        width: 40px;
+        text-align: center;
+    }
+    span{
+        display: inline-block;
+        color: white;
+        min-width: 130px;
+        width: 120px;
+    }
+    .contenedor-style{
+        width: 250px;
+        position: absolute;
+        display: none;
+        background: rgba(0, 0, 0, 0.808);
+        right: 0px;
+        padding: 10px 5px;
+    }
+    .contenedor:hover .contenedor-style{
+        display: block;
+    }
+    .contenedor li:hover{
+        background: grey;
+    }
 
 
-/* PIE DE PAGINA */
-footer {
-    grid-area: footer;
-    background-color: cornflowerblue;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-footer {
-	a {
-		color: #000;
-		text-decoration: none;
-		padding: 10px;
-		border-radius: 10px;
-		&:hover {
-			font-size: large;
-			box-shadow: 0 0 5px 0 #fff inset, 0 0 10px 4px #fff;
-			color: #fff;
-			transition: all 0.1s ease-in-out;
-		}
-	}
-}
-.contenedor{
-    display: none;
-}
-.pie{
-   display: none;
-}
-.reponsive{
-   display: none;
+    .formulario{
+        display: block;
+    }
+    form{
+        width: auto;
+        margin: 0px;
+        padding: 15px 10px; 
+        background-color: white;
+        position: static;
+        background-color: lightblue;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;
+    }
+    
+    .formulario legend{
+        text-align: center;
+    }
+    .formulario p{
+        margin: 0px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .input-style{
+        width: 55%;
+        margin-right: 10%;
+    }
+    #boton{
+        width: 27%;
+    }
+    
+    #boton:hover {
+    color: #fff;
+    background-color: #3498DB;
+    padding: 1px 1px;
+    transition: all 0.2s ease;
+    }
+
+    #validar:active {
+    background-color: #85C1E9;
+    transition: all ease;
+    }
+
+    .input{
+        width: 95%;
+    }
+    .style{
+        margin-bottom: 10px;
+    }
+    .style .modificar{
+        width: 120px;
+        display: inline-block;
+    }
+    #color{
+        width: 155px;
+    }
+    #estado{
+        margin-bottom: 10px;
+    }
+    input[type=color]{
+        padding: 0px;
+        margin-left: 10%;
+    }
+    input[type=file]{
+        width: 130px;
+    }
+    input[type="checkbox"]{
+        margin-left: 20%;
+    }
+    .gl{        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0px;
+    }
+    .gl button{
+        padding: 25px 10px;
+        width: 115px;
+    }
+    .gl button:hover {
+        color: #fff;
+        padding: 25px 19px;
+        background-color: #3498DB;
+        transition: all 0.2s ease;
+    }
+    
+    .gl button:active {
+        background-color: #85C1E9;
+        transition: all ease;
+    }
+    textarea{
+        resize: none;
+    }
+
+    footer{
+        display:block;
+        margin: 0px;
+        padding: 0px;
+    }
+    footer a{
+        text-align: center;
+        display: block;
+        border-top: solid;
+        border-radius: 0px;
+    }
+
+
+    main{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    
 }
